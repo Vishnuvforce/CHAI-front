@@ -1050,8 +1050,8 @@ export function AssistantSpeech({ onBack, initialPrompt }: AssistantSpeechProps)
                   </button>
                 </form>
 
-                <p className={cn("mt-1.5 text-center text-[10px]", isDark ? "text-white/30" : "text-slate-400")}>
-                  Tap mic or speak &quot;Hey CHAI&quot; to command
+                <p className={cn("mt-1.5 text-center text-[10px]", isDark ? "text-white/40" : "text-slate-400")}>
+                  CHAI can make mistakes. Verify important info.
                 </p>
               </div>
             </aside>
@@ -1215,6 +1215,9 @@ export function AssistantSpeech({ onBack, initialPrompt }: AssistantSpeechProps)
                   <Send className="size-4" />
                 </button>
               </form>
+              <p className={cn("mt-2.5 text-center text-[11px]", isDark ? "text-white/40" : "text-slate-500")}>
+                CHAI can make mistakes. Verify important info.
+              </p>
             </div>
           </main>
         )}

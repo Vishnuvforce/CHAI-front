@@ -403,8 +403,8 @@ export function ChatWorkspace({ user }: { user: ProfileMenuUser | null }) {
                         onSubmit={(value, meta) => submitPrompt(value, meta)}
                         onMicClick={() => setIsSpeechAssistantOpen(true)}
                       />
-                      <p className="mt-2 text-center text-[10px] leading-4 text-muted-foreground">
-                        Enter to send · Shift+Enter for a new line · Tap mic or say &quot;Hey CHAI&quot;
+                      <p className="mt-2 text-center text-[11px] leading-4 text-muted-foreground">
+                        CHAI can make mistakes. Verify important info.
                       </p>
                     </>
                   }
@@ -564,9 +564,14 @@ function AnswerCanvas({
         )}
       </section>
 
-      <div className="mt-12 flex max-w-[88ch] items-center gap-3 border-t border-border/70 pt-4 text-sm text-muted-foreground">
-        <MessageCircle aria-hidden="true" className="size-4 shrink-0" />
-        <p>Keep exploring in the chat panel on the right.</p>
+      <div className="mt-12 flex max-w-[88ch] flex-wrap items-center justify-between gap-3 border-t border-border/70 pt-4 text-xs text-muted-foreground">
+        <div className="flex items-center gap-2">
+          <MessageCircle aria-hidden="true" className="size-4 shrink-0" />
+          <p>Keep exploring in the chat panel on the right.</p>
+        </div>
+        <p className="text-[11px] text-muted-foreground/80">
+          CHAI can make mistakes. Verify important info.
+        </p>
       </div>
     </article>
   )
